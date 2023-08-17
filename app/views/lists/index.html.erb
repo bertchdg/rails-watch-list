@@ -1,0 +1,14 @@
+<div class="card m-5 p-3">
+<div class="card-body">
+<h1>My Lists</h1>
+<%= link_to "Create a new list", new_list_path %>
+<% @lists.each do |list| %>
+  <ul class="list-group">
+  <li class="list-group-item  m-1 p-2 bc-gray">
+    <%= link_to list.name, list_path(list) %>
+  </li>
+  </ul>
+  <% end %>
+  <div class="card-body p-1 m-2">
+</div>
+</div>

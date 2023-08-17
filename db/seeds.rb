@@ -9,8 +9,8 @@ require 'faker'
 
 10.times do
   Movie.create!(
-    title: Faker::Quote.singular_siegler,
-    overview: Faker::Quote.most_interesting_man_in_the_world,
+    title: Faker::Movie.title,
+    overview: Faker::Movie.quote,
     poster_url: "https://loremflickr.com/320/240/",
     rating: rand(0.1..10.0).round(1)
   )

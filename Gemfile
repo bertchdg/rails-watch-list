@@ -71,3 +71,4 @@ gem "simple_form"
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem 'faker'
+gem "simple_form"

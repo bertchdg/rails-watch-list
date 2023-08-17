@@ -1,0 +1,14 @@
+<div class="card m-5 p-3">
+  <div class="card-body">
+    <h1><%= @list.name %></h1>
+      <%# <ul class="list-group">
+        <% @list.each do |movie| %>
+          <%# <li class="list-group-item  m-1 p-2 bc-gray">
+          <%= link_to movie.title, movie_path(movie) %>
+          <%# </li> %>
+        <%# <% end %>
+      <%# </ul> %>
+      <div class="card-body p-1 m-2">
+    <%= link_to "Back to all lists", lists_path %>
+  </div>
+</div>
