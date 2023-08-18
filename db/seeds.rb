@@ -11,7 +11,7 @@ require 'faker'
   Movie.create!(
     title: Faker::Movie.title,
     overview: Faker::Movie.quote,
-    poster_url: "https://loremflickr.com/320/240/",
+    poster_url: "https://loremflickr.com/150/150/",
     rating: rand(0.1..10.0).round(1)
   )
 end

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # root "lists"
 
   resources :lists, only: [:index, :show, :new, :create] do
-    resources :bookmarks, only: [:new, :create] do
+    resources :bookmarks, except: [:destroy] do
       resources :movies
     end
   end
